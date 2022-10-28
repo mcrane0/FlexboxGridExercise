@@ -65,17 +65,59 @@ p:nth-of-type(even) {
     justify-content:flex-end;
     flex-direction:column;
     align-items:center;
+    flex-direction:column-reverse; 
 }
 
 #two {
     display:flex;
-    align-items:center;
+    
     justify-content:space-between;
     flex-wrap:wrap;
+}
+#orange {
+    order:2;
+    align-self:center;
+}
+#purple {
+    order:3;
+    align-self:flex-end;
+}
+#brown {
+    order:1;
 }
 
 #three {
     display:grid;
     grid-template-columns:25% 25% 25% 25%;
-    grid-auto-rows:100px;
+    grid-template-rows:100px 100px 100px 100px 100px;
+}
+#p-one {
+    grid-column-start:1;
+    grid-column-end:3;
+}
+#p-two {
+    grid-column-start:3;
+    grid-column-end:5;
+}
+#p-three {
+    grid-row-start:2;
+    grid-row-end:4;
+}
+#p-four {
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:4;
+}
+#p-five {
+    grid-row-start:2;
+    grid-row-end:5;
+}
+#p-six {
+    grid-column-start:1;
+    grid-column-end:4;
+}
+#p-eight {
+    grid-column-start:2;
+    grid-column-end:5;
 }
